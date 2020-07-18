@@ -1,0 +1,48 @@
+<h2 class="text-center">Indicadores</h2>
+<hr>
+<table class="table ">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Indicador</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Unidad de medida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ dolar.nombre }}</td>
+      <td>{{ dolar.valor | currency }}</td>
+      <td class="text-center">{{ dolar.unidad_medida }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ euro.nombre }}</td>
+      <td>{{ euro.valor | currency }}</td>
+      <td class="text-center">{{ euro.unidad_medida }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ utm.nombre }}</td>
+      <td>{{ utm.valor | currency }}</td>
+      <td class="text-center">{{ utm.unidad_medida }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ uf.nombre }}</td>
+      <td>{{ uf.valor | currency }}</td>
+      <td class="text-center"> {{ uf.unidad_medida }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ libraCobre.nombre }}</td>
+      <td>{{ libraCobre.valor | currency }}</td>
+      <td class="text-center">{{ libraCobre.unidad_medida }}</td>
+    </tr>
+
+    <tr>
+      <td>{{ bitcoin.nombre }}</td>
+      <td>{{ bitcoin.valor | currency}}</td>
+      <td class="text-center">{{ bitcoin.unidad_medida }}</td>
+    </tr>
+  </tbody>
+</table>
