@@ -4,21 +4,24 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-sm">Pesos CLP</span>
       </div>
-      <input  [(ngModel)]="pesos.valor" 
+      <input  (input)="pesosChanged()"
+              [(ngModel)]="pesosAux" 
               type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
     </div>
     <div class="input-group input-group-sm mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-sm">Dólar USD</span>
       </div>
-      <input  [(ngModel)]="dolar.valor" 
-              type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+      <input  (input)="dolarChanged()"
+              [(ngModel)]="dolarAux" 
+              type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
     </div>
     <div class="input-group input-group-sm mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-sm">Unidad de Fomento</span>
       </div>
-      <input  [(ngModel)]="uf.valor"
+      <input  (input)="ufChanged()"
+              [(ngModel)]="ufAux"
               type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
     </div>
 
@@ -26,7 +29,8 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-sm">UTM</span>
       </div>
-      <input  [(ngModel)]="utm.valor"
+      <input  (input)="utmChanged()"
+              [(ngModel)]="utmAux"
               type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
     </div>
     
@@ -34,6 +38,7 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-sm">Euro</span>
       </div>
-      <input  [(ngModel)]="euro.valor"
+      <input  (input)="euroChanged()"
+              [(ngModel)]="euroAux"
               type="number" class="form-control text-right" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
     </div>
